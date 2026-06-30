@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & Random Avatar Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎭 Avatar Generator</h1>
+        <p class="subtitle">Portfolyonuz için benzersiz ve eğlenceli avatarlar üretin</p>
+
+        <div class="avatar-card">
+            <div class="loader" id="loader"></div>
+            <img id="avatar-img" src="https://api.dicebear.com/9.x/bottts/svg?seed=initial" alt="Avatar">
+        </div>
+
+        <div class="controls">
+            <div class="input-group">
+                <label for="style-select">Avatar Tarzı</label>
+                <select id="style-select">
+                    <option value="bottts">🤖 Robotlar (Bottts)</option>
+                    <option value="pixel-art">👾 Piksel Sanatı (Pixel Art)</option>
+                    <option value="avataaars">🧑‍ cana Yakın İnsanlar (Avataaars)</option>
+                    <option value="lorelei">🎨 Çizgi Karakter (Lorelei)</option>
+                    <option value="micah">📐 Minimalist Geometrik (Micah)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button id="generate-btn" class="btn btn-primary">🎲 Rastgele Üret</button>
+            <button id="download-btn" class="btn btn-secondary">💾 İndir (.SVG)</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
